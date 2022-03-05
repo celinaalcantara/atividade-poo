@@ -1,6 +1,5 @@
-class Aviao /*constructor (var modelo: String)*/{
+class Aviao constructor (var modelo: String){
 
-    var modelo = ""
     var piloto = false
     var nPassageiros = 0
     var motorOnOff = false
@@ -15,7 +14,6 @@ class Aviao /*constructor (var modelo: String)*/{
         }else{
             println("A piloto não está a bordo.")
         }
-
     }
 
     fun abastecer(){
@@ -26,7 +24,6 @@ class Aviao /*constructor (var modelo: String)*/{
         }else{
             println("Não é necessário abastecer.")
         }
-
     }
 
     fun ligaDeslM(){
