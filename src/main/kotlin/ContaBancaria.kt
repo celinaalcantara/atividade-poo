@@ -1,18 +1,18 @@
-class ContaBancaria constructor(var nome: String){
+class ContaBancaria constructor(var nome: String) {
 
     var conta = 0
     var agencia = 0
     var saldo = 0.0
     var senha = 0
+    var contador = 0
 
-    fun conferirS(valor: Int) {
-
-        if (senha == 1999) {
+    fun conferirS(valor: Int){
+        if (valor == 1999){
             println("Senha inserida com sucesso.\n")
-        }else{
-            while (senha != 1999){
+        }
+        while(valor != 1999){
             println("Senha inválida, tente novamente.\n")
-            }
+            senha = readLine()!!. toInt()
         }
     }
 
@@ -24,7 +24,7 @@ class ContaBancaria constructor(var nome: String){
 
         if(valor <= 0){
             println("Não foi possível realizar depósito.")
-        } else {
+        }else{
             saldo += valor
                 println("Depósito de R$$valor realizado com sucesso.")
         }
