@@ -34,7 +34,6 @@ fun main(){
     var saldo = 0.0
     var contador = 0
 
-
     titular.nome = "Prince"
     titular.conta = 1958
     titular.agencia = 84
